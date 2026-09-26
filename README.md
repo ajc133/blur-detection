@@ -9,15 +9,12 @@ This blur detection python script is the implementation result of this [tutorial
 ## How to use
 Make sure python and pip is installed. Then, install imutils and opencv-python.
 ```bash
-# install opencv-python
-pip install opencv-python
-# install imutils
-pip install imutils
+uv run blur-detection.py --help
 ```
 
-Place all your images sample in `images` folder (you can change the folder path later). After that, run this on your project folder. 
+Place all your images sample in `images` folder (you can change the folder path later). After that, run this on your project folder.
 ```bash
-python blur-detection.py --images images
+uv run blur-detection.py --images images
 ```
 
 The output will be like these
@@ -46,7 +43,7 @@ images/good_8.jpg - Blurry: 86.070335876096
 
 The default threshold is 100, which you can define by self by adding more parameter just like this
 ```bash
-python blur-detection.py --images images --threshold 1000
+uv run blur-detection.py --images images --threshold 1000
 ```
 
 ## How it works?
